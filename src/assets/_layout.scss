@@ -1,0 +1,46 @@
+#app {
+  display: flex;
+  min-height: 100vh;
+
+  & > nav {
+    background: rgba(128,128,128,0.1) !important;
+    border: 1px solid var(--drip-color-border);
+    flex: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--drip-spacing);
+    justify-content: center;
+    padding: var(--drip-spacing);
+
+    a {
+      color: var(--drip-color-text);
+      text-align: center;
+      text-decoration: none;
+      &:hover {
+        color: var(--drip-color-link);
+      }
+    }
+
+    .icon {
+      border: 1px solid currentColor;
+      border-radius: 1ch;
+      width: 6ch;
+      height: 6ch;
+      stroke: currentColor;
+    }
+  }
+
+  & > main {
+    flex: 1;
+  }
+}
+
+@media (max-aspect-ratio: 1/1) {
+  #app {
+    flex-direction: column;
+
+    & > nav {
+      flex-direction: row;
+    }
+  }
+}
