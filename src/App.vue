@@ -11,11 +11,11 @@ import IconGear from '@/components/icons/IconGear.vue'
       <IconIndex />
       Index
     </RouterLink>
-    <RouterLink to="/">
+    <RouterLink to="/files">
       <IconFiles />
       Files
     </RouterLink>
-    <RouterLink to="/">
+    <RouterLink to="/config">
       <IconGear />
       Config
     </RouterLink>
